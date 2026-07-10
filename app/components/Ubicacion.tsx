@@ -43,7 +43,7 @@ export default function Ubicacion() {
           </h2>
         </div>
 
-        <div className="mt-14 grid gap-8 lg:grid-cols-2">
+        <div className="mt-14 grid grid-cols-1 gap-8 lg:grid-cols-2">
           <div className="overflow-hidden rounded-3xl border border-black/5 bg-white shadow-sm">
             <iframe
               title="Ubicación de ACI Consultoría"

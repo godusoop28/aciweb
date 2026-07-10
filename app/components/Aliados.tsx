@@ -1,22 +1,44 @@
 import Image from "next/image";
 
 const ALIADOS = [
-  { name: "Quálitas", src: "/aliados/logo-qualitas.jpeg" },
-  { name: "Skandia", src: "/aliados/logo-skandia.jpeg" },
   {
-    name: "Seguros Monterrey New York Life",
-    src: "/aliados/logo-seguros-monterrey-new-york-life.jpeg",
+    name: "ANA Seguros",
+    label: "ANA Seguros",
+    src: "/aliados/logo-ana-seguros.jpeg",
   },
-  { name: "Seguros El Potosí", src: "/aliados/logo-seguros-el-potosi.jpeg" },
-  { name: "GMX Seguros", src: "/aliados/logo-gmx-seguros.jpeg" },
-  { name: "Banorte Seguros", src: "/aliados/logo-banorte-seguros.jpeg" },
   {
     name: "Allianz — Distribuidor Autorizado",
+    label: "Allianz",
     src: "/aliados/logo-allianz-distribuidor-autorizado.jpeg",
   },
-  { name: "ANA Seguros", src: "/aliados/logo-ana-seguros.jpeg" },
-  { name: "HDI Seguros", src: "/aliados/logo-hdi-seguros.jpeg" },
-  { name: "NAICA", src: "/aliados/logo-naica.jpeg" },
+  {
+    name: "Banorte Seguros",
+    label: "Banorte",
+    src: "/aliados/logo-banorte-seguros.jpeg",
+  },
+  {
+    name: "GMX Seguros",
+    label: "GMX Seguros",
+    src: "/aliados/logo-gmx-seguros.jpeg",
+  },
+  {
+    name: "HDI Seguros",
+    label: "HDI Seguros",
+    src: "/aliados/logo-hdi-seguros.jpeg",
+  },
+  {
+    name: "Seguros El Potosí",
+    label: "El Potosí",
+    src: "/aliados/logo-seguros-el-potosi.jpeg",
+  },
+  {
+    name: "Seguros Monterrey New York Life",
+    label: "Seguros Monterrey",
+    src: "/aliados/logo-seguros-monterrey-new-york-life.jpeg",
+  },
+  { name: "Skandia", label: "Skandia", src: "/aliados/logo-skandia.jpeg" },
+  { name: "NAICA", label: "NAICA", src: "/aliados/logo-naica.jpeg" },
+  { name: "Quálitas", label: "Quálitas", src: "/aliados/logo-qualitas.jpeg" },
 ];
 
 export default function Aliados() {
@@ -36,21 +58,24 @@ export default function Aliados() {
           </p>
         </div>
 
-        <div className="mt-14 grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-5">
+        <div className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-5 lg:grid-cols-5">
           {ALIADOS.map((aliado) => (
             <div
               key={aliado.name}
-              className="flex h-28 items-center justify-center rounded-2xl border border-black/5 bg-white p-5 shadow-sm transition-all hover:-translate-y-1 hover:border-aci-navy/15 hover:shadow-md"
+              className="group flex h-36 flex-col items-center justify-center gap-2 overflow-hidden rounded-2xl border border-black/5 bg-white p-4 shadow-sm transition-all hover:-translate-y-1 hover:border-aci-navy/15 hover:shadow-md"
             >
-              <div className="relative h-full w-full">
+              <div className="relative h-16 w-full">
                 <Image
                   src={aliado.src}
                   alt={aliado.name}
                   fill
-                  sizes="(max-width: 640px) 45vw, (max-width: 1024px) 30vw, 18vw"
-                  className="object-contain"
+                  sizes="(max-width: 640px) 40vw, (max-width: 1024px) 28vw, 16vw"
+                  className="object-contain mix-blend-multiply"
                 />
               </div>
+              <span className="text-center text-[11px] font-medium leading-tight text-aci-ink/40">
+                {aliado.label}
+              </span>
             </div>
           ))}
         </div>

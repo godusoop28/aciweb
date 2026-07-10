@@ -62,7 +62,7 @@ export default function Unete() {
           onSubmit={handleSubmit}
           className="mt-10 rounded-3xl border border-white/10 bg-white/5 p-6 text-left backdrop-blur-sm sm:p-9"
         >
-          <div className="grid gap-5 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
             <label className="flex flex-col gap-1.5 text-sm font-medium text-white/80">
               Nombre
               <input

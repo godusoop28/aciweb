@@ -79,12 +79,12 @@ export default function Agenda() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-8 lg:grid-cols-[1.4fr_1fr]">
+        <div className="mt-14 grid grid-cols-1 gap-8 lg:grid-cols-[1.4fr_1fr]">
           <form
             onSubmit={handleSubmit}
             className="rounded-3xl border border-black/5 bg-aci-offwhite p-6 shadow-sm sm:p-9"
           >
-            <div className="grid gap-5 sm:grid-cols-2">
+            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
               <label className="flex flex-col gap-1.5 text-sm font-medium text-aci-ink/80">
                 Nombre
                 <input

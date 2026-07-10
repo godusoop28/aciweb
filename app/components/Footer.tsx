@@ -23,7 +23,7 @@ export default function Footer() {
   return (
     <footer className="bg-aci-ink text-white/80">
       <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8">
-        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <Image
               src="/logo-aci-blanco.png"

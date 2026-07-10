@@ -27,7 +27,7 @@ export default function Hero() {
         className="pointer-events-none absolute -right-24 top-24 h-80 w-80 rounded-full bg-aci-gold/15 blur-3xl"
       />
 
-      <div className="relative mx-auto grid max-w-7xl gap-14 px-5 pb-20 pt-14 sm:px-8 sm:pt-20 lg:grid-cols-2 lg:items-center lg:gap-10 lg:pb-28 lg:pt-24">
+      <div className="relative mx-auto grid max-w-7xl grid-cols-1 gap-14 px-5 pb-20 pt-14 sm:px-8 sm:pt-20 lg:grid-cols-2 lg:items-center lg:gap-10 lg:pb-28 lg:pt-24">
         <div className="aci-fade-up">
           <span className="inline-flex items-center gap-2 rounded-full border border-aci-navy/15 bg-white px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-aci-navy shadow-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-aci-gold" />
