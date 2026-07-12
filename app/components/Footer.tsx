@@ -112,9 +112,9 @@ export default function Footer() {
               Horario de atención
             </h3>
             <p className="mt-4 text-sm text-white/60">
-              Lunes a viernes
+              Lunes a viernes de 9:00 a 18:00
               <br />
-              9:00 a 18:00
+              Sábado de 10:00 a 15:00
             </p>
             <a
               href="#agenda"

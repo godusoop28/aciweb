@@ -51,7 +51,7 @@ export default function Agenda() {
       `Nombre: ${nombre}`,
       `Celular: ${celular}`,
       correo ? `Correo: ${correo}` : null,
-      `Interés: ${interes}`,
+      `Servicio: ${interes}`,
       mensaje ? `Mensaje: ${mensaje}` : null,
     ]
       .filter(Boolean)
@@ -155,17 +155,25 @@ export default function Agenda() {
             >
               Agendar cita
             </button>
+
+            <p className="mt-4 text-xs text-aci-ink/45">
+              Al enviar tus datos, se abrirá WhatsApp con tu información
+              prellenada para que un asesor de ACI Consultoría pueda
+              atenderte.
+            </p>
           </form>
 
           <div className="rounded-3xl bg-gradient-to-br from-aci-navy to-aci-navy-dark p-8 text-white shadow-md">
-            <h3 className="text-xl font-bold">Por qué agendar con ACI</h3>
+            <h3 className="text-xl font-bold">
+              ¿Por qué agendar con ACI Consultoría?
+            </h3>
             <ul className="mt-6 space-y-4">
               {BENEFICIOS.map((beneficio) => (
-                <li key={beneficio} className="flex items-start gap-3">
-                  <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-aci-gold text-aci-ink">
+                <li key={beneficio} className="flex items-center gap-3">
+                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-aci-gold text-aci-ink">
                     <IconCheck className="h-3.5 w-3.5" />
                   </span>
-                  <span className="text-sm font-medium text-white/90">
+                  <span className="text-sm font-medium leading-relaxed text-white/90">
                     {beneficio}
                   </span>
                 </li>

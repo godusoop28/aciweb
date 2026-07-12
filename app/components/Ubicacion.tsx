@@ -67,7 +67,11 @@ export default function Ubicacion() {
                   <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-aci-offwhite text-aci-navy">
                     <IconClock className="h-5 w-5" />
                   </span>
-                  <span className="pt-2">Horario de atención: 9:00 a 18:00</span>
+                  <span className="pt-2 leading-relaxed">
+                    Lunes a viernes de 9:00 a 18:00
+                    <br />
+                    Sábado de 10:00 a 15:00
+                  </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-aci-offwhite text-aci-navy">

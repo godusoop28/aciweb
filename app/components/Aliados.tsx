@@ -5,6 +5,7 @@ const ALIADOS = [
     name: "ANA Seguros",
     label: "ANA Seguros",
     src: "/aliados/logo-ana-seguros.jpeg",
+    boost: true,
   },
   {
     name: "Allianz — Distribuidor Autorizado",
@@ -15,11 +16,13 @@ const ALIADOS = [
     name: "Banorte Seguros",
     label: "Banorte",
     src: "/aliados/logo-banorte-seguros.jpeg",
+    boost: true,
   },
   {
     name: "GMX Seguros",
     label: "GMX Seguros",
     src: "/aliados/logo-gmx-seguros.jpeg",
+    boost: true,
   },
   {
     name: "HDI Seguros",
@@ -35,6 +38,7 @@ const ALIADOS = [
     name: "Seguros Monterrey New York Life",
     label: "Seguros Monterrey",
     src: "/aliados/logo-seguros-monterrey-new-york-life.jpeg",
+    boost: true,
   },
   { name: "Skandia", label: "Skandia", src: "/aliados/logo-skandia.jpeg" },
   { name: "NAICA", label: "NAICA", src: "/aliados/logo-naica.jpeg" },
@@ -62,9 +66,11 @@ export default function Aliados() {
           {ALIADOS.map((aliado) => (
             <div
               key={aliado.name}
-              className="group flex h-36 flex-col items-center justify-center gap-2 overflow-hidden rounded-2xl border border-black/5 bg-white p-4 shadow-sm transition-all hover:-translate-y-1 hover:border-aci-navy/15 hover:shadow-md"
+              className="group flex h-40 flex-col items-center justify-center gap-2 overflow-hidden rounded-2xl border border-black/5 bg-white p-4 shadow-sm transition-all hover:-translate-y-1 hover:border-aci-navy/15 hover:shadow-md"
             >
-              <div className="relative h-16 w-full">
+              <div
+                className={`relative w-full ${aliado.boost ? "h-20" : "h-16"}`}
+              >
                 <Image
                   src={aliado.src}
                   alt={aliado.name}

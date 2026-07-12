@@ -16,8 +16,8 @@ const SEGUROS = [
 
 const AHORRO = [
   {
-    title: "Educación Escolar",
-    text: "El fondo ideal para asegurar la carrera universitaria de tus hijos/as.",
+    title: "Retiro (PPR)",
+    text: "Ahorra para tu retiro con beneficios fiscales y crea un patrimonio para tu futuro.",
   },
   {
     title: "Metas Personales",
@@ -169,7 +169,7 @@ export default function Servicios() {
             accent="border-t-aci-gold"
             icon="💰"
             title="Planes de ahorro"
-            description="Creamos estrategias de ahorro que te ayudan a alcanzar tus metas personales y familiares."
+            description="Creamos estrategias de retiro y de ahorro personalizadas que te ayudan a alcanzar tus metas personales y familiares."
             button={
               <ServiceButton variant="secondary">
                 Cotiza un Plan de Ahorro a tu medida
