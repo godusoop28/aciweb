@@ -18,7 +18,7 @@ const ALIADOS = [
     label: "Banorte",
     src: "/aliados/logo-banorte-seguros.jpeg",
     boost: true,
-    scaleClass: "scale-[1.25]",
+    scaleClass: "scale-[1.6]",
   },
   {
     name: "GMX Seguros",
@@ -44,7 +44,7 @@ const ALIADOS = [
     label: "Seguros Monterrey",
     src: "/aliados/logo-seguros-monterrey-new-york-life.jpeg",
     boost: true,
-    scaleClass: "scale-[1.5]",
+    scaleClass: "scale-[1.9]",
   },
   { name: "Skandia", label: "Skandia", src: "/aliados/logo-skandia.jpeg" },
   { name: "NAICA", label: "NAICA", src: "/aliados/logo-naica.jpeg" },
