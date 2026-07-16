@@ -6,6 +6,7 @@ import {
   IconMapPin,
   IconPhone,
   IconTikTok,
+  IconWhatsApp,
 } from "./Icons";
 
 const QUICK_LINKS = [
@@ -98,6 +99,17 @@ export default function Footer() {
                 <IconPhone className="mt-0.5 h-4 w-4 shrink-0 text-aci-gold" />
                 <a href="tel:+527775163068" className="hover:text-aci-gold">
                   777 516 3068
+                </a>
+              </li>
+              <li className="flex gap-2.5">
+                <IconWhatsApp className="mt-0.5 h-4 w-4 shrink-0 text-aci-gold" />
+                <a
+                  href="https://wa.me/525539869683"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-aci-gold"
+                >
+                  55 3986 9683
                 </a>
               </li>
               <li className="flex gap-2.5">

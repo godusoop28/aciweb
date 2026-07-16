@@ -6,6 +6,7 @@ const ALIADOS = [
     label: "ANA Seguros",
     src: "/aliados/logo-ana-seguros.jpeg",
     boost: true,
+    scaleClass: "scale-[1.15]",
   },
   {
     name: "Allianz — Distribuidor Autorizado",
@@ -17,17 +18,21 @@ const ALIADOS = [
     label: "Banorte",
     src: "/aliados/logo-banorte-seguros.jpeg",
     boost: true,
+    scaleClass: "scale-[1.25]",
   },
   {
     name: "GMX Seguros",
     label: "GMX Seguros",
     src: "/aliados/logo-gmx-seguros.jpeg",
     boost: true,
+    scaleClass: "scale-[1.25]",
   },
   {
     name: "HDI Seguros",
     label: "HDI Seguros",
     src: "/aliados/logo-hdi-seguros.jpeg",
+    boost: true,
+    scaleClass: "scale-[1.2]",
   },
   {
     name: "Seguros El Potosí",
@@ -39,6 +44,7 @@ const ALIADOS = [
     label: "Seguros Monterrey",
     src: "/aliados/logo-seguros-monterrey-new-york-life.jpeg",
     boost: true,
+    scaleClass: "scale-[1.5]",
   },
   { name: "Skandia", label: "Skandia", src: "/aliados/logo-skandia.jpeg" },
   { name: "NAICA", label: "NAICA", src: "/aliados/logo-naica.jpeg" },
@@ -69,14 +75,14 @@ export default function Aliados() {
               className="group flex h-40 flex-col items-center justify-center gap-2 overflow-hidden rounded-2xl border border-black/5 bg-white p-4 shadow-sm transition-all hover:-translate-y-1 hover:border-aci-navy/15 hover:shadow-md"
             >
               <div
-                className={`relative w-full ${aliado.boost ? "h-20" : "h-16"}`}
+                className={`relative w-full overflow-hidden ${aliado.boost ? "h-20" : "h-16"}`}
               >
                 <Image
                   src={aliado.src}
                   alt={aliado.name}
                   fill
                   sizes="(max-width: 640px) 40vw, (max-width: 1024px) 28vw, 16vw"
-                  className="object-contain mix-blend-multiply"
+                  className={`object-contain mix-blend-multiply ${aliado.scaleClass ?? ""}`}
                 />
               </div>
               <span className="text-center text-[11px] font-medium leading-tight text-aci-ink/40">
